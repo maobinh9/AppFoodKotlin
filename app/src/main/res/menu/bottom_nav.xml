@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/home"
+        android:enabled="true"
+        android:icon="@drawable/ic_home"
+        android:title="Home"
+        app:cnb_backgroundColor="@color/white"
+        app:cnb_iconColor="@color/xanh_luc"
+        app:cnb_iconTintMode="src_in"
+        app:cnb_textColor="@color/xanh_luc"></item>
+
+    <item
+        android:id="@+id/category"
+        android:enabled="true"
+        android:icon="@drawable/ic_cate"
+        android:title="Category"
+        app:cnb_backgroundColor="@color/white"
+        app:cnb_iconColor="@color/xanh_luc"
+        app:cnb_iconTintMode="src_in"
+        app:cnb_textColor="@color/xanh_luc"></item>
+
+    <item
+        android:id="@+id/discount"
+        android:enabled="true"
+        android:icon="@drawable/ic_discount"
+        android:title="Comment"
+        app:cnb_backgroundColor="@color/white"
+        app:cnb_iconColor="@color/xanh_luc"
+        app:cnb_iconTintMode="src_in"
+        app:cnb_textColor="@color/xanh_luc"></item>
+
+    <item
+        android:id="@+id/cart"
+        android:enabled="true"
+        android:icon="@drawable/ic_cart"
+        android:title="Cart"
+        app:cnb_backgroundColor="@color/white"
+        app:cnb_iconColor="@color/xanh_luc"
+        app:cnb_iconTintMode="src_in"
+        app:cnb_textColor="@color/xanh_luc"></item>
+
+    <item
+        android:id="@+id/me"
+        android:enabled="true"
+        android:icon="@drawable/ic_user"
+        android:title="Me"
+        app:cnb_backgroundColor="@color/white"
+        app:cnb_iconColor="@color/xanh_luc"
+        app:cnb_iconTintMode="src_in"
+        app:cnb_textColor="@color/xanh_luc"></item>
+</menu>

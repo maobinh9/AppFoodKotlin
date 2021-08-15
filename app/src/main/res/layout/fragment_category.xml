@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".fragment.CategoryFragment">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/iconlogo"></ImageView>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/text_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="9dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Category"
+        android:textColor="@color/xanh_luc"
+        android:textSize="24dp"></TextView>
+
+    <RelativeLayout
+        android:id="@+id/relativeCategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_category"
+        android:layout_marginTop="5dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView_Category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></androidx.recyclerview.widget.RecyclerView>
+        >
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/text_product"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeCategory"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="6dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Products"
+        android:textColor="@color/xanh_luc"
+        android:textSize="24dp"></TextView>
+
+    <RelativeLayout
+        android:id="@+id/layoutShowProduct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_product"
+        android:layout_marginTop="9dp"></RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView_Product"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layoutShowProduct"></androidx.recyclerview.widget.RecyclerView>
+</RelativeLayout>

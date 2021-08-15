@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetaillReplyCommentActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/header"
+        android:background="@color/xanh_luc"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Reply comment"
+            android:textColor="@color/white"
+            android:textSize="27dp"></TextView>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relative_view"
+        android:background="#ECEDED"
+        android:layout_below="@+id/header"
+        >
+
+        <TextView
+            android:id="@+id/viewComment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:text="."
+            android:textColor="@color/black"
+            android:textSize="24dp"></TextView>
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="540dp"
+            android:id="@+id/recyclerViewReply"
+            android:layout_below="@+id/viewComment"
+            android:layout_marginTop="15dp"
+            ></androidx.recyclerview.widget.RecyclerView>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="69dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/relativeChat"
+        >
+
+        <EditText
+            android:id="@+id/edit_message"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/send"
+            android:background="@drawable/edit_text"></EditText>
+
+        <Button
+            android:id="@+id/send"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:backgroundTint="@color/xanh_luc"
+            android:text="GO"
+            android:textStyle="bold"></Button>
+    </RelativeLayout>
+</RelativeLayout>

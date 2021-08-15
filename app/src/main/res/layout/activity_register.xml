@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="260dp"
+            android:layout_height="201dp"
+            android:background="@drawable/logo"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.1"></ImageView>
+
+        <TextView
+            android:id="@+id/tendangnhap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="User"
+            android:textColor="@color/xanh_luc"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/logo"
+            tools:layout_editor_absoluteX="15dp"></TextView>
+
+        <EditText
+            android:id="@+id/dangkitk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="15dp"
+            android:backgroundTint="@color/xanh_luc"
+            android:drawableRight="@drawable/ic_user"
+            android:inputType="text"
+            android:paddingRight="6dp"
+            android:textColorHint="@color/purple_700"
+            android:textSize="21dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tendangnhap"></EditText>
+
+        <TextView
+            android:id="@+id/dkimatkhau"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="15dp"
+            android:text="Password"
+            android:textColor="@color/xanh_luc"
+            android:textStyle="bold"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dangkitk"></TextView>
+
+        <EditText
+            android:id="@+id/dkimk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="15dp"
+            android:backgroundTint="@color/xanh_luc"
+            android:drawableRight="@drawable/ic_baseline_lock_24"
+            android:inputType="textPassword"
+            android:paddingRight="6dp"
+            android:textColorHint="@color/purple_700"
+            android:textSize="21dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dkimatkhau"></EditText>
+
+        <TextView
+            android:id="@+id/nhaplaimk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="15dp"
+            android:text="Confirm password"
+            android:textColor="@color/xanh_luc"
+            android:textStyle="bold"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dkimk"></TextView>
+
+        <EditText
+            android:id="@+id/nhaplaimkdki"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="15dp"
+            android:backgroundTint="@color/xanh_luc"
+            android:drawableRight="@drawable/ic_baseline_lock_24"
+            android:inputType="textPassword"
+            android:paddingRight="6dp"
+            android:textColorHint="@color/purple_700"
+            android:textSize="21dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nhaplaimk"></EditText>
+
+
+        <Button
+            android:id="@+id/button_Register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/button_login"
+            android:padding="10dp"
+            android:text="Go"
+            android:textColor="@color/white"
+            android:textSize="21dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nhaplaimkdki"></Button>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
